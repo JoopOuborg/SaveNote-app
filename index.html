@@ -1,0 +1,58 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap"></link>
+      <link rel="stylesheet" href="./style.css">    
+    </head>
+    <body>
+        <!-- modal voor editten van notes -->
+        <div class="modal">
+            <div class="modal-content">
+                <input class="modal-title" placeholder="Title" type="text">   
+                <input class="modal-text" placeholder="Take a note..." type="text">   
+                <span class="modal-close-button">Close</span>
+            </div>    
+        </div> 
+        <main>
+            
+            <header>
+                <img class="header-logo"                 
+                src="./images/savenote-logo.png" />
+                <!-- Image by rawpixel.com on Freepik, modified -->               
+                <h2 class="header-title">SaveNote</h2>
+            </header>
+            
+            <!-- inputbox -->
+            <div id="form-container">
+                <form id="form" autocomplete="off">
+                   <input id="note-title" placeholder="Title" type="text">
+                   <input id="note-text" placeholder="Take a note..." type="text">
+                   <div id="form-buttons">
+                       <button type="submit" id="submit-button">Submit</button>
+                       <button type="button" id="form-close-button">Close</button>
+                   </div>
+                </form>
+            </div>
+            
+            <!-- note list -->
+            <div id="notes"></div>
+            <!-- placeholder voor wanneer er geen notes zijn  -->
+            <div id="placeholder">
+                <img
+               
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Light_Bulb-Silhouette.svg/65px-Light_Bulb-Silhouette.svg.png"
+                 id="placeholder-logo">
+                <p id="placeholder-text">Notes you add appear here</p>
+            </div>
+            <div id="color-tooltip">
+                <div class="color-option" data-color="#fff" id="white"></div>
+                <div class="color-option" data-color="#d7aefb" id="purple"></div>
+                <div class="color-option" data-color="#fbbc04" id="orange"></div>
+                <div class="color-option" data-color="#a7ffeb" id="teal"></div>
+            </div>
+        </main>
+        
+        <script src="./app.js"></script>
+    </body>
+</html>
+
+<!-- https://google.com/keep -->
